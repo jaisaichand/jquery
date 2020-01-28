@@ -1,0 +1,53 @@
+.wrapper{
+    width: 100%;
+    height: 500px;
+}
+.parallax-1,.parallax-3,.parallax-4{
+    width: 100%;
+    height: 300px;
+}
+.onee{
+    font-size: 80px;
+    text-align: center;
+    color: white;
+    vertical-align: 10%;
+}
+.parallax-window {
+height: 400px;
+background: transparent;
+}
+
+#onee1{
+    font-size: 80px;
+    
+}
+
+.parallax-2,.p3{
+    padding: 0px 17px;
+}
+
+.p{
+    font-size: 50px;
+    padding: 11%;
+    border: 2px solid;
+}
+.p2{
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+.p7{
+    display: flex;
+    align-items: center;
+}
+.l1{
+    display: inline-block;
+    font-size: 630%;
+
+}
+.f1{
+    min-height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
