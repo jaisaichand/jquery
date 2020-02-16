@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Control group Jquery UI</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/bd9f8ac991.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
+</head>
+<body>
+
+  <div>
+
+    <div class="controlgroup mt-5 ">
+             <select id="car-type">
+        <option>Compact car</option>
+        <option>Midsize car</option>
+        <option>Full size car</option>
+        <option>SUV</option>
+        <option>Luxury</option>
+        <option>Truck</option>
+        <option>Van</option>
+      </select>
+      <label for="transmission-standard">Standard</label>
+      <input type="radio" name="transmission" id="transmission-standard">
+      <label for="transmission-automatic">Automatic</label>
+      <input type="radio" name="transmission" id="transmission-automatic">
+      <label for="insurance">Insurance</label>
+      <input type="checkbox" name="insurance" id="insurance">
+      <label for="horizontal-spinner" class="ui-controlgroup-label">Number of cars</label>
+      <input id="horizontal-spinner" class="ui-spinner-input">
+      <button>Book Now!</button> 
+    </div>
+
+  </div>
+  <div class="px-5">
+    <div class="controlgroup-vertical mt-5 px-5 bg-info">
+            <select id="car-type">
+                    <option>Compact car</option>
+                    <option>Midsize car</option>
+                    <option>Full size car</option>
+                    <option>SUV</option>
+                    <option>Luxury</option>
+                    <option>Truck</option>
+                    <option>Van</option>
+                  </select>
+                  <label for="transmission-standard-v">Standard</label>
+                  <input type="radio" name="transmission" id="transmission-standard-v">
+                  <label for="transmission-automatic-v">Automatic</label>
+                  <input type="radio" name="transmission" id="transmission-automatic-v">
+                  <label for="insurance-v">Insurance</label>
+                  <input type="checkbox" name="insurance" id="insurance-v">
+                  <label for="horizontal-spinner-v" class="ui-controlgroup-label"># of cars</label>
+                  <input id="horizontal-spinner-v" class="ui-spinner-input">
+                  <button>Book Now!</button>
+    </div>
+  </div>
+
+</body>
+
+<script>
+      $( ".controlgroup" ).controlgroup();
+    $( ".controlgroup-vertical" ).controlgroup({
+      "direction": "vertical"
+    });
+    
+</script>
+
+</html>
